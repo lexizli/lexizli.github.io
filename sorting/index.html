@@ -21,7 +21,10 @@
 
     var numbers = getArray(10);
     // alert(arr);
-    document.write(numbers + "  <<< исходные данные<br>");
+    for (var i = 0; i < numbers.length; i++) {
+      document.write(numbers[i] + "&nbsp;&nbsp");
+    }
+    document.write("  <<< исходные данные<br>"
     var size = numbers.length;
 
     for (var current = 0; current < size - 1; current++) {

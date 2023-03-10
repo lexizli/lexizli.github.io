@@ -13,8 +13,11 @@
     function getArray(count) {
       var tempArray = [];
       for (let i = 0; i < count; i++) {
-        tempArray.push(getRandom(10))
-      }
+          var number = getRandom(1000000);
+          tempArray.push(~~(number/Math.pow(10,4))- ~~(number/Math.pow(10,5))*10);     
+/*        tempArray.push(getRandom(10))
+*/
+    }
       return tempArray;
     }
 
